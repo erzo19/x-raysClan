@@ -1,10 +1,10 @@
 // دالة لإغلاق رسالة التنبيه
-function اغلاقالتنبيه() {
+function اغلاق التنبيه() {
     document.getElementById("overlayAviso").style.display = "none";
 }
 
 // دالة لإغلاق رسالة النجاح
-function اغلاقالحوار() {
+function اغلاق الحوار() {
     document.getElementById("dialogo").style.display = "none";
 }
 
