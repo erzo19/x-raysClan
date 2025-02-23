@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recrutamento FREE FIRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overlay de Aviso -->
+    <div id="overlayAviso" class="overlay">
+        <div class="aviso-container">
+            <h2>Atenção</h2>
+            <p>This site is the recruitment officer of the Guild Guild Name. Trust only this site. Otherwise, you can contact the ADM via WhatsApp to make your recruitment.</p>
+            <p><b>ADM: ERZO FF</b></p>
+            <p><b>Contato: ‪0 100 722 4767‬</b></p>
+
+            <button onclick="fecharAviso()">Fechar</button>
+        </div>
+    </div>
+
+    <header>
+        <img src="logo.png" alt="OsTeimosos Logo" class="logo">
+        <h1>🔥 RECRUTAMENTO 🔥</h1>
+        <p>A Free Fire’s Insanest Guild!</p>
+    </header>
+
+    <section id="sobre">
+        <h2>💀 X-RAYS   ! a Guilda 💀</h2>
+        <p>X-RAYS  ! é uma guilda competitiva que busca os melhores jogadores para dominar o Free Fire.</p>
+    </section>
+
+    <section id="regras">
+        <h2>📜 Group Rules after join our clan & 4x4</h2>
+        <ul>
+            <li>🔥 We participate in 4x4 every day between the guild or rivals.</li>
+            <li>🔥The main team will be formed by the two best of the 4x4.</li>
+            <li>🔥 To enter the main team, it is mandatory to participate in the daily 4x4.</li>
+        </ul>
+        <h3>⚠️ Rules to join X-RAYS  ! clan ⚠️</h3>
+        <ul>
+            <li>✅ Your account >55 level.</li>
+            <li>✅ You must have rename card [ X-NAME   ! ] if you don’t have You get 7 days to get it.</li>
+            <li>✅You must respect all members in clan.</li>
+            <li>✅ You must be legend player free style and play every day.</li>
+            <li>✅ You must skip room test to join our clan.</li>
+            <li>⚠️ Whoever leaves the guild without warning <b>cannot return</b>.</li>
+        </ul>
+    </section>
+
+    <section id="formulario">
+        <h2>📋 Recruitment Form</h2>
+        
+        <div class="aviso">
+            ⚠️ <b>Attention:</b> Before registering, read the group rules and 4x4!  
+            <b>Anyone who doesn’t follow the rules will be removed from the guild.</b>  
+        </div>
+        
+        <form id="recrutamentoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="nick">Nick do Free Fire:</label>
+            <input type="text" id="nick" required>
+
+            <label for="id">ID do Free Fire:</label>
+            <input type="number" id="id" oninput="this.value = this.value.replace(/\D/g, '')" required>
+
+            <label for="contato">Contato (WhatsApp):</label>
+            <input type="number" id="contato" oninput="this.value = this.value.replace(/\D/g, '')" required>
+
+            <label class="checkbox">
+                <input type="checkbox" id="aceitarRegras" required>
+                I have read and agree with the rules of the group and 4x4.
+            </label>
+
+            <button type="submit">💀Send Registration 💀</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Recruitment - The Legend Never Dies | <a href="wa.me/201007224767" target="_blank">Whatsapp da Guilda</a></p>
+    </footer>
+
+    <!-- Diálogo de Sucesso -->
+    <div id="dialogo" class="dialogo">
+        <div class="dialogo-conteudo">
+            <h2>✅ Cadastro Enviado!</h2>
+            <p>Seu pedido de recrutamento foi enviado com sucesso! Entraremos em contato pelo WhatsApp.</p>
+            <button onclick="fecharDialogo()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
